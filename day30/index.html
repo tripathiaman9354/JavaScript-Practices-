@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Query Selector</title>
+</head>
+<body>
+    <div>My</div>
+    <div>
+        <p class="box">Name</p>
+    </div>
+    <p class="box">is</p>    
+    <p class="box">!!</p>
+    <div id="name">Aman</div>
+
+    <script>
+        // let name=document.querySelector('.box');
+        // let name=document.querySelector('div p.box');
+        // let name=document.querySelector('#name');
+        // let name=document.querySelector('div');  
+        let name=document.querySelectorAll('.box');
+        let count =name.length;
+        for(let x=0;x<count;x++)
+        {
+            // console.log(name[x].innerHTML);
+            name[x].innerHTML=x;
+        }
+        // console.log(name);
+    </script>
+</body>
+</html>

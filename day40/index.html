@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element Tag Height Width</title>
+</head>
+<body>
+    <div id="box" style="padding: 100px; border: 400px solid #000;  ">Vishals</div>    
+    <script>
+        let box=document.getElementById('box');
+        let cwidth=box.clientWidth;
+        let cheight=box.clientHeight;
+        console.log(cwidth);
+        console.log(cheight);
+        let owidth=box.offsetWidth;
+        let oheight=box.offsetHeight;
+        console.log(owidth);
+        console.log(oheight);
+    </script>
+</body>
+</html>

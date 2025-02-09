@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Open_close</title>
+</head>
+<body>
+    <a href="javascript:void(0)" onclick="OpenTab()">OpenTab</a><br/><br/>
+    <a href="javascript:void(0)" onclick="closeTab()">CloseTab</a>
+    <a href="javascript:void(0)" onclick="OpenTab2()">OpenTab2</a>
+    
+    <script>
+        let mywin;
+        // function OpenTab(){
+        //     let url="https://www.w3schools.com";
+        //     let name="Tab";
+        //     let options="width=500,height=500";
+        //     mywin=window.open(url,name,options);
+        // }
+        function OpenTab2(){
+            let url="https://youtube.com";
+            let name="Tab";
+            let options="width=300,height=300";
+            mywin=window.open(url,name,options);
+        }  
+        function closeTab(){
+            mywin.close();
+        }
+
+        function OpenTab()
+        {
+            let options="width=300,height=300";
+            // let x=window.open("","_blank","");
+            let x=window.open("","_self","");
+            x.document.write("hello My Name is Aman");
+        }
+    </script>
+</body>
+</html>

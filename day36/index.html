@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListner</title>
+</head>
+<body>
+
+    <input type="button" name="" id="btn" value="Click Here">
+    <script>
+        let b=2;
+        let btn=document.getElementById('btn');
+        btn.addEventListener('click',tst1);
+        btn.addEventListener('click',tst2);
+        // btn.addEventListener('click',function(){
+        //     console.log(this.getAttribute("id"));  
+        // });
+        
+        function tst1(){
+            console.log("Aman");
+            let btn=document.getElementById("btn");
+            btn.removeEventListener('click',tst1);
+        }
+        function tst2(){
+            console.log("Tripathi");
+        }
+    </script>
+</body>  
+</html>

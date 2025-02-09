@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS StyleSheet and Classes</title>
+</head>
+<body>
+    <div id="txt" style="font-size: 30px;" class="box">Aman</div>
+    <input type="button" value="Red" onclick="changeclrRed()">
+    <input type="button" value="Blue" onclick="changeclrblue()">
+    <input type="button" value="getStyle" onclick="getStyle()">    
+    <input type="button" value="toggle" onclick="toggletest()">    
+
+    <script>
+        /*
+        Inline Style
+            style
+            setAttribute
+        className
+        classList
+            add
+            remove
+            replace
+            contains
+            length
+            item
+            toggle
+        */
+        /*function changeclrblue(){
+            let txt=document.getElementById('txt');
+            // txt.style.color='blue';
+            txt.setAttribute('style','color:blue');
+        }
+
+        function changeclrRed(){
+            let txt=document.getElementById('txt');
+            txt.style.color='red';
+        }
+        
+        function getStyle(){
+            let txt=document.getElementById("txt");
+            // console.log(txt.style.color);
+            let css=getComputedStyle(txt);
+            console.log(css.fontSize);
+        }*/
+
+        let txt=document.getElementById("txt");
+        // txt.className="text";
+        txt.className+=" test";
+        // console.log(txt.className);
+        // console.log(txt.classList);
+        // txt.classList.add('text2');
+        // txt.classList.remove('test');
+        // txt.classList.replace('test','text');
+        // let booli=txt.classList.contains('test' );//if class exist return true otherwise false
+        // console.log(booli);
+        // console.log(txt.classList.length);
+        console.log(txt.classList.item(1));
+        console.log(txt.classList);
+
+        function toggletest(){
+            let txt=document.getElementById('txt');
+            txt.classList.toggle('test2');
+        } 
+    </script>
+</body>
+</html> 

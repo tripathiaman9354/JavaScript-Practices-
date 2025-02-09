@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplaceChild</title>
+</head>
+<body>
+    <ul id="box">
+        <li>Aman</li>
+        <li>Atul</li>
+        <li>Ajay</li>
+    </ul>
+    <script>
+        let box=document.getElementById("box");
+        let li=document.createElement("li");
+        li.textContent="Jatin";
+        let pos=box.firstElementChild.nextElementSibling;
+        box.replaceChild(li,pos);
+    </script>
+</body>
+</html> 

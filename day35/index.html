@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before</title>
+</head>
+<body>
+      <ul id="box">
+        <li>Aman</li>
+        <li>Vishal</li>
+        <li>Jatin</li>
+        <li>Pankaj</li>
+      </ul>
+    <script>
+        let box=document.getElementById("box");
+        let new_li=document.createElement("li");
+        new_li.textContent="Anmol";
+        // box.appendChild(new_li);
+        
+        // let pos=box.firstElementChild;
+        let pos=box.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling;
+        box.insertBefore(new_li,pos);
+
+    </script>
+</body>
+</html>

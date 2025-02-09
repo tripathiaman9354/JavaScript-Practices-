@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object Model)</title>
+</head>
+<body>
+    <label for="">Num1:</label>
+    <input type="text" id="num1" ><br/> <br/>
+    <label for="">Num2:</label>
+    <input type="text" id="num2"><br/><br/>
+    <input type="button" value="clickMe" onclick="addfun()">
+    <div id="result"></div>
+    <script>
+        /*
+        get
+        set
+        add
+        delete
+        document.getElementById()
+        document.getElementsByClassName()
+        document.getElementsByTagName()
+        document.all()
+        document.head()
+        document.title()
+        document.body()
+        document.images()
+        document.anchors()
+        document.links()
+        document.form()
+        document.URL
+        */
+        // var x=document.getElementById('box');
+        // console.log(x.innerHTML);
+        function addfun(){
+            var x=parseInt(document.getElementById('num1').value);
+            var y=parseInt(document.getElementById('num2').value);
+            document.getElementById('result').innerHTML=x+y; 
+        }
+    </script>
+</body>
+</html>

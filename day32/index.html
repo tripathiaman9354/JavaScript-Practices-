@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Append Elements</title>
+</head>
+<body>
+
+    <ul id="ul_box">
+        <li>Aman</li>
+        <li>Jatin</li>
+        <li>Rupesh</li>
+        <li>Vidhya</li>
+    </ul>
+    <input type="text"  id="name"/>
+    <input type="button" onclick="addNewli()" value="Add More">
+    <script> 
+    function addNewli() {
+        let li_box=document.getElementById("ul_box");
+        let new_li=document.createElement("li"); 
+        li_box.appendChild(new_li);  
+            //new_li.className="abc";
+            //new_li.id="new_li";
+        let name=document.getElementById("name").value;
+        new_li.textContent=name;
+        // let liText=document.createTextNode(name);
+        // new_li.appendChild(liText);
+        document.getElementById("name").value="";
+    }
+    </script>
+</body>
+</html>

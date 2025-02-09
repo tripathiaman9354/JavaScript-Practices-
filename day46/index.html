@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling and Event Capturing</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #div{
+            background-color: blue;
+            padding: 50px;
+        }
+        #a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <a href="javascript:void(0)" id="a">Click</a>
+    </div>
+    <script>
+        /*
+        1.child to parent
+        2.parent to child
+        3. only Click Event
+        */
+       document.getElementById('div').addEventListener("click",function(){
+        console.log("Div Click");
+        // e.stopPropagation();
+       });
+
+       document.getElementById('a').addEventListener("click",function(e){
+        console.log("A Click");
+        e.stopPropagation();
+       });
+
+       document.addEventListener("click",function(){
+        console.log("Body Click");
+       },true);
+    </script> 
+</body>
+</html>

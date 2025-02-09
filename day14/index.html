@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Array</title>
+</head>
+<body>
+    <script>
+        var k=1;
+        var arr=[
+            ["Aman","Delhi"],           //index0
+            ["Asheesh","Bahraich"],     //index1
+            ["Ashutosh","Bahraich"]     //index2
+        ];
+        document.write("<table border='1px'><tr><td>S.No.</td><td>Name</td><td>City</td></tr>");
+            for(var i=0;i<3;i++,k++)
+            {
+                document.write("<tr><td>"+k+"</td>");
+                for(var j=0;j<2;j++)    
+                {
+                    document.write("<td>"+arr[i][j]+"</td>");
+                }    
+            }
+            document.write("</table>");
+
+        //document.write(arr[1][1]); 
+    </script> 
+</body>
+</html>

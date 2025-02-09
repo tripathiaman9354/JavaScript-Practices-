@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes Methods</title>
+</head>
+<body>
+    <div id="name">Aman</div>
+    <input type="button" value="AddAttr" onclick="AddAttr()"/>
+    <input type="button" value="GetAttr" onclick="GetAttr()"/>
+    <input type="button" value="Remove" onclick="RemAttr()"/>
+    <input type="button" value="Has" onclick="HasAttr()"/>
+
+
+    <script>
+        /*
+        setAttribute
+        getAttribute
+        removeAttribute
+        hasAttribute
+        */
+       function AddAttr(){
+            let name=document.getElementById('name');
+            name.setAttribute("class","my_class");
+        }
+
+        function GetAttr(){
+            let name=document.getElementById('name');
+            console.log(name.getAttribute("class"));
+        }
+
+        function RemAttr(){
+            let name=document.getElementById('name');
+            name.removeAttribute("class");
+        }
+
+        function HasAttr(){
+            let name=document.getElementById('name');
+            console.log(name.hasAttribute("class"));
+        }
+         
+    </script>   
+</body>
+</html>

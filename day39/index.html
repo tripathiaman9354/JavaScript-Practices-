@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsertAdjacent</title>
+</head>
+<body>
+    <div id="box">
+        <div>Vishal</div>
+    </div>
+    <script>
+        /*
+        beforebegin
+        afterbegin
+        beforeend
+        afterend
+        */
+       let box=document.getElementById("box");
+       box.insertAdjacentHTML('beforebegin','<div>Amit</div>');
+       box.insertAdjacentHTML('afterbegin','<div>Atul</div>');
+       box.insertAdjacentHTML('beforeend','<div>Ankit</div>');
+       box.insertAdjacentHTML('afterend','<div>Ajay</div>');
+
+
+    </script>
+</body>
+</html>

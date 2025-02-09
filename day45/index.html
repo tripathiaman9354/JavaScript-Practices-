@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Events</title>
+</head>
+<body>
+    <img src="/pic.jpg" alt="" style="height: 350px;width: 350px;">
+    <div></div>
+    <script>
+        /*
+        DOMContentLoaded
+        Load
+        beforeunload/unload
+        */
+         
+        // window.addEventListener('DOMContentLoaded',function(){
+        //     console.log("DOMContentLoaded");  
+        //  })
+        //  window.addEventListener('load',function(){
+        //     console.log("load");    
+        //  })
+        
+        window.onbeforeunload=function(){
+            return "hello";
+        };
+    </script>
+</body>
+</html>

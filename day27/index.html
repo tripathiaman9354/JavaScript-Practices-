@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="name">Aman </div>
+    <div class="name">Tripathi</div>
+    <div class="name">Bhavit</div>
+    <script>
+        /*
+        document.getElementByClassName
+        */
+       let name=document.getElementsByClassName("name");
+       name[0].innerHTML="Ajay";
+           for(var i=0;i<name.length;i++)
+            {
+              console.log(name[i].innerHTML);
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval & Clearinterval</title>
+    <style>
+        /* #counter{
+            background-color: Blue;
+            width: 2px;
+            height: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <div id="counter"></div>
+    <script>
+        // 1sec=1000ms
+        
+        /*var x=setInterval(test,100);
+        let y=1;
+        function test()
+        {
+            if(y==100){
+                clearInterval(x);
+            }
+            document.getElementById("counter").innerHTML=y;
+            y++;
+        }*/
+        
+        /*let x=1;
+        setInterval(IncWidth,500);
+        function IncWidth(){
+            x++;
+            let c=document.getElementById("counter");
+            c.style.width=x+"px";      
+        }*/
+
+        setInterval(Showclock,1000);
+        function Showclock(){
+            let d=new Date();
+            document.getElementById("counter").innerHTML=d.toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>
