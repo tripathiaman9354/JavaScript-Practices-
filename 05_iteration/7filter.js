@@ -1,11 +1,9 @@
-const coding=["js","ruby","C++","Java","Python"]
+// const coding=["js","ruby","C++","Java","Python"]
 
-const value=coding.forEach((item)=>{
-    console.log(item);
-})
+// const value=coding.forEach((item)=>{
+    // console.log(item);
+// })
 // console.log(value);
-
-
 
 // const nums=[1,2,3,4,5,6,7,8,9,10]
 // let newnums=nums.filter((nums)=> nums>4)
@@ -22,7 +20,6 @@ const value=coding.forEach((item)=>{
 //     }
 // })
 // console.log(newnums);
-
 
 
 
