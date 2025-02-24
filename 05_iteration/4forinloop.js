@@ -8,13 +8,13 @@ const myObject={
 } 
 
 
-// for (const key in myObject) {
-//     console.log(`${key} shortcut is for ${myObject[key]}`); 
-// } 
+for (const key in myObject) {
+    // console.log(`${key} shortcut is for ${myObject[key]}`); 
+} 
 
 
 
 const programming=["Js","Python","C++","Java"]
 for (const key in programming) {
-    console.log(programming[key]);  
+    // console.log(programming[key]);    
 }

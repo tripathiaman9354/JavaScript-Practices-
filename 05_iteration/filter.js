@@ -1,13 +1,13 @@
-// const coding=["js","ruby","C++","Java","Python"]
+const coding=["js","ruby","C++","Java","Python"]
 
-// const value=coding.forEach((item)=>{
-//     console.log(item);
-// })
+const value=coding.forEach((item)=>{
+    console.log(item);
+})
 // console.log(value);
 
 
 
-const nums=[1,2,3,4,5,6,7,8,9,10]
+// const nums=[1,2,3,4,5,6,7,8,9,10]
 // let newnums=nums.filter((nums)=> nums>4)
 // let newnums=nums.filter((nums)=> {
 //     return nums>4
@@ -27,7 +27,7 @@ const nums=[1,2,3,4,5,6,7,8,9,10]
 
 
 
-const books=[
+/*const books=[
     {title:'Book One',genre:'Fiction',publish:1981,edition:2004},
     {title:'Book Two',genre:'Non-Fiction',publish:1992,edition:2008},
     {title:'Book Three',genre:'History',publish:1999,edition:2007},
@@ -38,8 +38,8 @@ const books=[
     {title:'Book Eight',genre:'Science',publish:2011,edition:2016},
     {title:'Book Nine',genre:'Non-Fiction',publish:1981,edition:1989},
     {title:'Book Ten',genre:'History',publish:1985,edition:2003}, 
-];
+];*/
 
 // const userBooks=books.filter((bk)=>bk.genre==="History")
-const userBooks=books.filter((bk)=>bk.publish>=1995 && bk.genre==="History")
-console.log(userBooks);
+// const userBooks=books.filter((bk)=>bk.publish>=1995 && bk.genre==="History")
+// console.log(userBooks);

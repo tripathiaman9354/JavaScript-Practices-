@@ -6,12 +6,9 @@ const coding=["js","ruby","C++","Java","Python"]
             
 // })
 
-
-// coding.forEach((value)=>{
-//     console.log(value);
-// })
-
-
+coding.forEach((value)=>{
+        console.log(value);
+})
 
 // function printMe(item){
 //     console.log(item);
@@ -43,6 +40,6 @@ const myCoding=[
 
 
 myCoding.forEach((item)=>{
-    console.log(item.languageFileName);
+    // console.log(item.languageFileName);
     
 })
